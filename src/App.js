@@ -1,9 +1,5 @@
 import { Heading } from "./Heading";
-import { Drop } from "./Drop";
-// import bimg from "./bimg4.png";
-// // import bimg5 from "./bimg5.png";
-// // import bimg2 from "./bimg2.png";
-// // import bimg6 from "./bimg6.png";
+
 import {
   BrowserRouter,
   Routes,

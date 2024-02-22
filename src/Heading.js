@@ -1,5 +1,3 @@
-import vibrantvista from "./vibrantvista.png";
-import bimg from "./bimg4.png";
 import { Slides } from "./Slides";
 import { Drop } from "./Drop";
 
