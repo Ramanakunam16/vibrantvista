@@ -175,28 +175,25 @@ export function Compitations() {
   );
 }
 function About() {
-  {
-    return (
-      <div className="about-us">
-        <h1>About Us</h1>
-        <h3>
-          {" "}
-          About Vibrant Vista - A Festival by Dr. B.R. Ambedkar University
-          Srikakulam{" "}
-        </h3>
-        <p>
-          Welcome to Vibrant Vista, an electrifying celebration of innovation
-          and creativity presented by Dr. B.R. Ambedkar University Srikakulam!
-          Vibrant Vista, hosted by Dr. B.R. Ambedkar University Srikakulam, is a
-          dynamic engineering festival that seeks to inspire and propel the
-          brightest minds in the world of technology. Our mission is to provide
-          a platform where students can unleash their potential, engage in
-          collaborative learning, and contribute to the ever-evolving landscape
-          of engineering.
-        </p>
-      </div>
-    );
-  }
+  return (
+    <div className="about-us">
+      <h1>About Us</h1>
+      <h3>
+        {" "}
+        About Vibrant Vista - A Festival by Dr. B.R. Ambedkar University
+        Srikakulam{" "}
+      </h3>
+      <p>
+        Welcome to Vibrant Vista, an electrifying celebration of innovation and
+        creativity presented by Dr. B.R. Ambedkar University Srikakulam! Vibrant
+        Vista, hosted by Dr. B.R. Ambedkar University Srikakulam, is a dynamic
+        engineering festival that seeks to inspire and propel the brightest
+        minds in the world of technology. Our mission is to provide a platform
+        where students can unleash their potential, engage in collaborative
+        learning, and contribute to the ever-evolving landscape of engineering.
+      </p>
+    </div>
+  );
 }
 
 function BackBtn() {
