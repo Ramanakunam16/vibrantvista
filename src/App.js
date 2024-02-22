@@ -1,13 +1,6 @@
 import { Heading } from "./Heading";
 
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link,
-  useActionData,
-  useSearchParams,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
 
 const movies = [
