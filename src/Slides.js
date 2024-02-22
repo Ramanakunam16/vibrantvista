@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "./Button";
-import { Compitations, WorkShop } from "./App";
+import { Compitations, WorkShops } from "./App";
 import { Drop } from "./Drop";
 
 export function Slides() {
@@ -26,7 +26,7 @@ export function Slides() {
       )}
       {step === 2 && (
         <>
-          <WorkShop />
+          <WorkShops />
           <Drop />
         </>
       )}
