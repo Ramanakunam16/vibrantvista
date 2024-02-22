@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "./Button";
-import { Compitations, Sports, WorkShop } from "./App";
+import { Compitations, WorkShop } from "./App";
 import { Drop } from "./Drop";
 
 export function Slides() {
@@ -31,12 +31,7 @@ export function Slides() {
           <Drop />
         </>
       )}
-      {step === 3 && (
-        <>
-          <Sports />
-          <Drop />
-        </>
-      )}
+
       <div className="buttons">
         <Button bgColor="#fff" onClick={handlePrevious}>
           <span>⬅</span>
