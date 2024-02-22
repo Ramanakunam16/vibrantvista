@@ -84,7 +84,7 @@ body {
 }
 
 .drop-content li {
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
   list-style-type: none;
   border-bottom: 1px solid rgb(247, 244, 244);
@@ -101,6 +101,8 @@ body {
 }
 
 .list li {
+  width: 100%;
+  height: 80%;
   border: 1px solid #e7e7e7;
   background-color: #f7f7f7;
   border-radius: 7px;
@@ -117,6 +119,10 @@ body {
 }
 .list {
   margin-top: 15%;
+}
+.list img {
+  width: 100%;
+  height: 100%;
 }
 
 /* animation*/
@@ -210,7 +216,7 @@ body {
 }
 
 .buttons button span {
-  font-size: 36px;
+  font-size: 26px;
   line-height: 1;
 }
 
@@ -327,7 +333,7 @@ img {
   height: 50%;
   background-color: #f7f7f7;
   padding: 30px;
-  font-size: 26px;
+  font-size: 16px;
   margin-left: 25%;
 }
 
@@ -336,22 +342,31 @@ img {
 }
 .back-btn {
   color: #e87b0e;
-  font-size: 60px;
-  position: relative;
+  font-size: 30px;
+  position: fixed;
   top: 120px;
-  left: 0px;
+  left: 60px;
   text-decoration: none;
 }
-
-.options button {
-  padding: 10px;
-  font-size: 15px;
+.options {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
+  /* justify-content: space-between; */
+  gap: 80px;
+}
+.options button {
+  border-radius: 30px;
+  /* border: 1px solid black; */
+  padding: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: 4px;
+  background-color: #c3c2c2;
 }
 .details {
   animation: ani;
   animation-duration: 3s;
+}
+.details p {
+  text-align: left;
+  margin-bottom: 20px;
 }

@@ -1,4 +1,5 @@
 import { Heading } from "./Heading";
+// import webdev from "./webdev.png";
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
@@ -6,30 +7,34 @@ import { useState } from "react";
 const movies = [
   {
     imdbID: "tt1375666",
-    Title: "Inception",
+    Title: "Web Development",
+    about:
+      "Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.",
     Year: "2010",
     Poster:
-      "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
+      "https://t4.ftcdn.net/jpg/02/83/46/33/240_F_283463385_mfnrx6RPU3BqObhVuVjYZjeZ5pegE7xq.jpg",
     runtime: 148,
     imdbRating: 8.8,
     userRating: 10,
   },
   {
     imdbID: "tt0088763",
-    Title: "Back to the Future",
+    Title: "App development",
     Year: "1985",
     Poster:
-      "https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      "https://t4.ftcdn.net/jpg/04/04/21/61/240_F_404216128_AzxvFH2p321asyRWiGfH9G7XmqLb8zl8.jpg",
     runtime: 116,
     imdbRating: 8.5,
     userRating: 9,
   },
   {
     imdbID: "tt1375668",
-    Title: "Inception",
+    Title: "UI/UX Design",
+    about:
+      "Product & UI/UX Design workshops focus on the principles and processes of creating user-centered digital products. Participants learn design thinking, prototyping, and user interface/user experience (UI/UX) design skills to craft effective and user-friendly solutions.",
     Year: "2010",
     Poster:
-      "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
+      "https://stock.adobe.com/images/toolkit-ui-ux-scene-creator-concept/485914714",
     runtime: 148,
     imdbRating: 8.8,
     userRating: 10,
@@ -46,7 +51,7 @@ const movies = [
   },
   {
     imdbID: "tt13756676",
-    Title: "Inception",
+    Title: "Web Development",
     Year: "2010",
     Poster:
       "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
@@ -116,9 +121,10 @@ function Movie({ movie }) {
       )}
       {isHovered && (
         <div className="details">
-          <p>helofjdkjdsss</p>
+          <p>{movie.about}</p>
           <div className="options">
             <button>Know More</button>
+
             <button>Register</button>
           </div>
         </div>
@@ -137,6 +143,38 @@ function MovieList() {
         ))}
       </ul>
     </>
+  );
+}
+
+function MovieDetails() {
+  return (
+    <div>
+      <div>
+        {" "}
+        <h2>About</h2>
+        <p></p>
+      </div>
+      <div>
+        {" "}
+        <h2>Schedule</h2>
+        <p></p>
+      </div>
+      <div>
+        {" "}
+        <h2>incentives</h2>
+        <p></p>
+      </div>
+      <div>
+        {" "}
+        <h2>Accomodation</h2>
+        <p></p>
+      </div>
+      <div>
+        {" "}
+        <h2>Contact</h2>
+        <p></p>
+      </div>
+    </div>
   );
 }
 
@@ -203,4 +241,5 @@ function BackBtn() {
     </Link>
   );
 }
+
 export default App;

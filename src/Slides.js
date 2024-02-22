@@ -6,7 +6,6 @@ import { Drop } from "./Drop";
 export function Slides() {
   const [step, setStep] = useState(0);
 
-  // const [test, setTest] = useState({ name: "Jonas" });
   function handlePrevious() {
     if (step >= 0) setStep((s) => s - 1);
   }
