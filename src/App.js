@@ -90,15 +90,13 @@ const movies = [
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Heading />}></Route>
-          <Route path="about-us" element={<About />}></Route>
-          <Route path="compitations" element={<MovieList />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Heading />}></Route>
+        <Route path="about-us" element={<About />}></Route>
+        <Route path="compitations" element={<MovieList />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

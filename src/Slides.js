@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Button } from "./Button";
 import { Compitations, Sports, WorkShop } from "./App";
-import { Heading } from "./Heading";
-import { Drop } from "./Drop";
 
 export function Slides() {
   const [step, setStep] = useState(0);
