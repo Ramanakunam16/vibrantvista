@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "./Button";
 import { Compitations, Sports, WorkShop } from "./App";
+import { Drop } from "./Drop";
 
 export function Slides() {
   const [step, setStep] = useState(0);
