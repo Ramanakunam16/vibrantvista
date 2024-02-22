@@ -218,7 +218,7 @@ function MovieDetails({ selectedId }) {
         <h2>About</h2>
         <p>{movie.about}</p>
       </div>
-      <img src={movie.Poster} />
+      <img src={movie.Poster} alt={"topic img"} />
       <div>
         {" "}
         <h2>Schedule</h2>
