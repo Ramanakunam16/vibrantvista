@@ -549,3 +549,57 @@ img {
   text-decoration: none;
   text-decoration-color: none;
 }
+
+@media (max-width: 900px) {
+  .logo h2 {
+    color: #fff;
+    font-size: 3em;
+    /* padding-top: 180px; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  .compitations h1 {
+    position: relative;
+    top: 160px;
+    left: 60px;
+    font-size: 200%;
+  }
+  .compitations p {
+    position: relative;
+    top: 200px;
+    left: 80px;
+    width: 60%;
+    color: #e7e7e7;
+  }
+  .compitations button {
+    position: relative;
+    top: 240px;
+    left: 80px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .workshop h1 {
+    position: relative;
+    top: 160px;
+    left: 60px;
+    font-size: 200%;
+  }
+  .workshop p {
+    position: relative;
+    top: 200px;
+    left: 80px;
+    width: 60%;
+    color: #e7e7e7;
+  }
+  .workshop button {
+    position: relative;
+    top: 240px;
+    left: 80px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+}
