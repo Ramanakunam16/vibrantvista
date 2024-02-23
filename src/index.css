@@ -558,7 +558,7 @@ img {
   text-decoration-color: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .logo h2 {
     color: #fff;
     font-size: 2.6em;
@@ -636,7 +636,7 @@ img {
     grid-template-columns: 1fr;
     gap: 10px;
     width: 40vh;
-    margin-left: 10%;
+    margin-left: 15px;
     /* margin-top: 10%; */
   }
   .head {
@@ -645,12 +645,23 @@ img {
     color: #fff;
     font-size: 30px;
   }
+  .back-btn {
+    display: none;
+  }
+  .movieDetails {
+    width: 90%;
+    height: min-content;
+    background-color: #fdfafa;
+    padding: 40px;
+    margin-left: 20px;
 
-  .menu-btn {
-    width: 35px;
-    height: 5px;
-    font-weight: 1000;
-    background-color: rgb(237, 234, 231);
-    /* margin: 6px 0; */
+    border-radius: 30px;
+  }
+  .movieDetails img {
+    /* z-index: 1; */
+    display: none;
+  }
+  .movieDetails p {
+    width: 120%;
   }
 }
