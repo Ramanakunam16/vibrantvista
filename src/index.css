@@ -97,15 +97,18 @@ body {
 .list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
-  min-width: 150vh;
+  gap: 20px;
+  width: 140vh;
+}
+.list p {
+  font-size: 14px;
 }
 
 h3 {
   margin-top: 20px;
 }
 .list div {
-  width: 95%;
+  width: 100%;
   height: 80%;
   /* border: 1px solid #e7e7e7; */
   background-color: #f7f7f7;
@@ -118,7 +121,7 @@ h3 {
   text-align: center;
   padding: 10px;
   cursor: pointer;
-  margin-left: 6px;
+  /* margin-left: 6px; */
 
   /* width: 150%; */
 }
@@ -430,7 +433,7 @@ img {
   position: absolute;
   top: 180px;
   right: 180px;
-  width: 28%;
+  width: 24%;
   z-index: 1;
 }
 .movieDetails button {

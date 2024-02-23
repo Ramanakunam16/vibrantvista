@@ -65,7 +65,7 @@ const competitions = [
     imdbID: "tt3",
     Title: "CADATHON",
     about:
-      "cadathon is a competitive event where participants, often studients or professionals in the field of computer adied design (CAD), collaborate to solve design challenges within a specified time frame. it typically involves creating 3D models using the software CATIA V5 , participants showcase their problem solving and design skills, and judges evaluate the enters based on critera such as innovation, ",
+      "cadathon is a competitive event where participants in the field of computer adied design(CAD) collaborate to solve design challenges within a specified time frame. it typically involves creating 3D models using the software CATIA V5, and judges evaluate the enters based on  innovation, ",
     Year: "2010",
     Poster:
       "https://t3.ftcdn.net/jpg/04/83/18/68/240_F_483186822_Ak9c9Lrb1lY7kRhWA7MqSnRRYhXVONEG.jpg",
@@ -96,7 +96,7 @@ const competitions = [
     Title: "Start-up ideas",
     Year: "1985",
     about:
-      "Engage in our Startup Ideas Competition, a platform for visionaries to pitch groundbreaking concepts.Unleash your entrepreneurial spirit, presenting innovative solutions with the potential to transform industries.Join the competition to receive expert feedback, network with industry professionals, and propel your startup idea to new heights.",
+      "Engage in our Startup Ideas Competition, a platform for visionaries to pitch groundbreaking concepts.Unleash your entrepreneurial spirit, presenting innovative solutions with the potential to transform industries..",
     Poster:
       "https://as2.ftcdn.net/v2/jpg/02/38/40/55/1000_F_238405533_yyX4K55OmH2LiM7LQ01ITn6kl0b6J6K8.jpg",
   },
@@ -105,7 +105,7 @@ const competitions = [
     Title: "Project Expo",
     Year: "1985",
     about:
-      "Elevate your ideas in our Project Presentation Competition, where innovation takes the spotlight.Showcase your creativity, problem-solving, and communication skills to a panel of esteemed judges.Compete with fellow participants and demonstrate the impact and excellence of your projects in this dynamic and rewarding competition",
+      "Elevate your ideas in our Project Presentation Competition, where innovation takes the spotlight.Showcase your creativity, problem-solving, and communication skills to a panel of esteemed judges.",
     Poster:
       "https://t4.ftcdn.net/jpg/06/63/16/53/240_F_663165377_z6TSXi9l92PVmJiO1AzMqJJNaOUhSnfb.jpg",
   },
@@ -117,7 +117,7 @@ const workShops = [
     Title: "3D-Printing &it`s types",
     Year: "1985",
     about:
-      "Join our 3D Printing Workshop to explore the fascinating world of additive manufacturing technologies.Learn hands-on skills in designing, slicing, and operating 3D printers to bring your ideas to life.Gain insights into the limitless possibilities of 3D printing, from prototypes to customized creations, in this immersive and practical workshop.",
+      "Join our 3D Printing Workshop to explore the fascinating world of additive manufacturing technologies.Learn hands-on skills in designing, slicing, and operating 3D printers to bring your ideas to life.Gain insights into the limitless possibilities of 3D printing",
     Poster:
       "https://t3.ftcdn.net/jpg/03/20/63/80/240_F_320638073_wNfI2qIbu9FIi9Pk6dyHmgV7rqE4ebKQ.jpg",
   },
@@ -126,7 +126,7 @@ const workShops = [
     Title: "Advance Matrials(Mechanical)&it`s Applications",
     Year: "1985",
     about:
-      "Immerse yourself in our Mechanical Advanced Materials Workshop, where cutting-edge materials and techniques are explored.Learn how to harness the latest advancements in materials science to enhance mechanical components and structures.Acquire hands-on experience, staying ahead in the field by mastering the innovative materials shaping the future of mechanical engineering.",
+      "Immerse yourself in our Mechanical Advanced Materials Workshop, where cutting-edge materials and techniques are explored.Learn how to harness the latest advancements in materials science.",
     Poster:
       "https://t3.ftcdn.net/jpg/07/14/32/30/240_F_714323074_3tzYTMfraqKmzykOR3zl4ECNPN8axT9B.jpg",
   },
@@ -208,9 +208,7 @@ function Competition({ competition, onSelectedId, selectedId }) {
         <div className="details">
           <p>{competition.about}</p>
           <div className="options">
-            <>
-              <button onClick={handleClick}>Know More</button>
-            </>
+            <button onClick={handleClick}>Know More</button>
 
             <button>
               <a href={registrationForm} className="links">
