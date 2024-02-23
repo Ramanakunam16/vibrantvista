@@ -6,7 +6,7 @@
 }
 body {
   font-family: "Courier New", Courier, monospace;
-  background-image: url("bimg5.png");
+  background-image: url("bimg77.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -159,12 +159,12 @@ h3 {
 }
 
 .logo h2:nth-child(1) {
-  color: #d87b09;
+  color: #fcfaf8;
   -webkit-text-stroke: 3px #edecea;
 }
 
 .logo h2:nth-child(2) {
-  color: #f3d678;
+  color: #eb6f5c;
   animation: animate 4s ease-in-out infinite;
 }
 
