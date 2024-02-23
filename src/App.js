@@ -414,8 +414,11 @@ export function WorkShops() {
   return (
     <div className="workshop">
       <h1>Workshops</h1>
-      <p style={{ color: "#fff" }}>
-        jbbfhhfvbjndlihfuhfbndksfhgbvfndslkhgbndkjefhbfnvdkshbfndkefhb
+      <p>
+        Engineering workshops provide hands-on learning, fostering practical
+        skills crucial for real-world applications. Participants engage in
+        interactive sessions, gaining insights, and honing expertise in diverse
+        engineering disciplines
       </p>
       <Link to="/workshop">
         <button>Know More</button>

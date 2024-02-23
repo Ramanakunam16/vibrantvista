@@ -558,10 +558,10 @@ img {
   text-decoration-color: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .logo h2 {
     color: #fff;
-    font-size: 3em;
+    font-size: 2.6em;
     /* padding-top: 180px; */
     position: absolute;
     transform: translate(-50%, -50%);
@@ -582,13 +582,13 @@ img {
     position: relative;
     top: 200px;
     left: 80px;
-    width: 60%;
+    width: 70%;
     color: #e7e7e7;
   }
   .compitations button {
     position: relative;
     top: 240px;
-    left: 80px;
+    left: 70px;
     font-size: 16px;
     padding: 10px;
     border-radius: 40px;
@@ -604,7 +604,7 @@ img {
     position: relative;
     top: 200px;
     left: 60px;
-    width: 20%;
+    max-width: 50%;
     color: #e7e7e7;
   }
   .workshop button {
@@ -625,10 +625,32 @@ img {
     /* font-weight: bold; */
     position: relative;
     margin-left: 30%;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
 
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 10px;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 40vh;
+    margin-left: 10%;
+    /* margin-top: 10%; */
+  }
+  .head {
+    margin-left: 32%;
+    margin-bottom: 20%;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .menu-btn {
+    width: 35px;
+    height: 5px;
+    font-weight: 1000;
+    background-color: rgb(237, 234, 231);
+    /* margin: 6px 0; */
   }
 }
