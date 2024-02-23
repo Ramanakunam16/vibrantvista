@@ -159,12 +159,12 @@ h3 {
 }
 
 .logo h2:nth-child(1) {
-  color: transparent;
+  color: #d87b09;
   -webkit-text-stroke: 3px #edecea;
 }
 
 .logo h2:nth-child(2) {
-  color: #e87b0e;
+  color: #f6f5f5;
   animation: animate 4s ease-in-out infinite;
 }
 
@@ -620,7 +620,7 @@ img {
     margin-left: 10px;
   }
   .about-us p {
-    width: 120%;
+    width: 100%;
     margin-right: 20px;
   }
   .about-us h3 {
