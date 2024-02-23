@@ -109,6 +109,25 @@ const competitions = [
     Poster:
       "https://t4.ftcdn.net/jpg/06/63/16/53/240_F_663165377_z6TSXi9l92PVmJiO1AzMqJJNaOUhSnfb.jpg",
   },
+  {
+    imdbID: "tt7",
+    Title: "Crack & Grab",
+
+    about:
+      "Crack & Grab: Dive into the circuit challenge! Teams of 3 detect faults, racing against the clock. Engaging, collaborative, and electrifying, this competition pushes problem-solving skills to the limit. Ready to crack the code and grab the win?",
+    Poster:
+      "https://t3.ftcdn.net/jpg/03/05/50/70/240_F_305507033_BN534jYwkZk1gYGx9n03zfnoTkIDJTYL.jpg",
+
+    dates: "5th,6th",
+    timings: "2:00 PM - 4:00 PM",
+    accommodation: "",
+    incharge1: "Ch.Sravani",
+    incharge2: "M.Devayani",
+    mobile1: "6302240318",
+    mobile2: "7601076108",
+    email1: "",
+    email2: "",
+  },
 ];
 
 const workShops = [
