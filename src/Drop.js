@@ -23,13 +23,19 @@ export function Drop() {
         <div className="drop-content">
           <ul>
             <li>
-              <Link to="/about-us">About us</Link>
+              <Link to="/about-us" className="links">
+                About us
+              </Link>
             </li>
             <li>
-              <Link to="/compitations">Compitations</Link>
+              <Link to="/compitations" className="links">
+                Compitations
+              </Link>
             </li>
             <li>
-              <Link to="/workshop">Workshop</Link>
+              <Link to="/workshop" className="links">
+                Workshop
+              </Link>
             </li>
 
             <li>Guest</li>

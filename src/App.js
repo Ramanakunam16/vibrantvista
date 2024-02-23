@@ -9,14 +9,13 @@ import {
 } from "react-router-dom";
 import { useState } from "react";
 import { Drop } from "./Drop";
-
 const competitions = [
   {
     imdbID: "tt4",
-    Title: "Art Competition",
+    Title: "Art mania",
     Year: "1985",
     about:
-      "An art competition is a platform for artists to showcase their creativity and skills, engaging in a friendly yet competitive environment to gain recognition and possibly win awards for their artistic achievements.",
+      "An art mania is a platform for artists to showcase their creativity and skills in drawings,image and video editing, engaging in a friendly yet competitive environment to gain recognition and possibly win awards for their artistic achievements.",
     Poster:
       "https://t4.ftcdn.net/jpg/07/27/13/81/240_F_727138149_6QWtSPTiVDzeLIdFtYPCFg7Btsvzxuex.jpg",
     runtime: 116,
@@ -31,21 +30,24 @@ const competitions = [
       "A web hackathon is a coding event where teams work together in a short time to build and create websites or web applications. It's a fun challenge to showcase programming and problem-solving abilities.",
     Poster:
       "https://t4.ftcdn.net/jpg/02/87/55/79/240_F_287557939_1nPdlpdptbTreAi24RW2kIgh8Ce4y8Aq.jpg",
-    runtime: 148,
-    imdbRating: 8.8,
-    userRating: 10,
+    form: "https://forms.gle/xePiRN7KhSEsiz1a9",
   },
   {
     imdbID: "tt6",
-    Title: "Presentation Work",
-    Year: "1985",
+    Title: "Tool Hunt",
     about:
-      "In a presentation competition, people take turns showing and talking about interesting topics using slides or speeches. It's like a friendly show-and-tell to share ideas and communication skills.",
+      "Tool Hunt is a challenging game where participants must swiftly identify various tools presented within a specified time frame. Sharpen your knowledge and test your tool recognition skills in this engaging and fast-paced competition!",
     Poster:
-      "https://t3.ftcdn.net/jpg/01/71/67/84/240_F_171678425_xtWfZTmft4HUGJvtUyvldBL4KT7PCXT0.jpg",
-    runtime: 116,
-    imdbRating: 8.5,
-    userRating: 9,
+      "https://t3.ftcdn.net/jpg/06/90/79/04/240_F_690790406_hQAydhaoJE2ROC0Z8pKBGQiXPSZQvsGd.jpg",
+    dates: "5th,6th",
+    timings: "2:00 PM - 4:00 PM",
+    accommodation: "",
+    incharge1: "Jayanth",
+    incharge2: "",
+    mobile1: "9550457006",
+    mobile2: "",
+    email1: "",
+    email2: "",
   },
   {
     imdbID: "tt7",
@@ -59,64 +61,77 @@ const competitions = [
     imdbRating: 8.8,
     userRating: 10,
   },
+  {
+    imdbID: "tt3",
+    Title: "CADATHON",
+    about:
+      "cadathon is a competitive event where participants, often studients or professionals in the field of computer adied design (CAD), collaborate to solve design challenges within a specified time frame. it typically involves creating 3D models using the software CATIA V5 , participants showcase their problem solving and design skills, and judges evaluate the enters based on critera such as innovation, ",
+    Year: "2010",
+    Poster:
+      "https://t3.ftcdn.net/jpg/04/83/18/68/240_F_483186822_Ak9c9Lrb1lY7kRhWA7MqSnRRYhXVONEG.jpg",
+    dates: "5th,6th",
+    timings: "2:00 PM - 4:00 PM",
+    accommodation: "",
+    incharge1: "Jayanth",
+    incharge2: "",
+    mobile1: "9550457006",
+    mobile2: "",
+    email1: "",
+    email2: "",
+  },
+  {
+    imdbID: "tt6",
+    Title: "PPT/Paper Presentation",
+    Year: "1985",
+    about:
+      "In a presentation competition, people take turns showing and talking about any interesting  topics using slides or speeches. It's like a friendly show-and-tell to share ideas and communication skills.",
+    Poster:
+      "https://t3.ftcdn.net/jpg/01/71/67/84/240_F_171678425_xtWfZTmft4HUGJvtUyvldBL4KT7PCXT0.jpg",
+    runtime: 116,
+    imdbRating: 8.5,
+    userRating: 9,
+  },
+  {
+    imdbID: "tt6",
+    Title: "Start-up ideas",
+    Year: "1985",
+    about:
+      "Engage in our Startup Ideas Competition, a platform for visionaries to pitch groundbreaking concepts.Unleash your entrepreneurial spirit, presenting innovative solutions with the potential to transform industries.Join the competition to receive expert feedback, network with industry professionals, and propel your startup idea to new heights.",
+    Poster:
+      "https://as2.ftcdn.net/v2/jpg/02/38/40/55/1000_F_238405533_yyX4K55OmH2LiM7LQ01ITn6kl0b6J6K8.jpg",
+  },
+  {
+    imdbID: "tt6",
+    Title: "Project Expo",
+    Year: "1985",
+    about:
+      "Elevate your ideas in our Project Presentation Competition, where innovation takes the spotlight.Showcase your creativity, problem-solving, and communication skills to a panel of esteemed judges.Compete with fellow participants and demonstrate the impact and excellence of your projects in this dynamic and rewarding competition",
+    Poster:
+      "https://t4.ftcdn.net/jpg/06/63/16/53/240_F_663165377_z6TSXi9l92PVmJiO1AzMqJJNaOUhSnfb.jpg",
+  },
 ];
 
 const workShops = [
   {
-    imdbID: "tt1",
-    Title: "Web Development",
-    about:
-      "Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.",
-    Year: "2010",
-    Poster:
-      "https://t4.ftcdn.net/jpg/02/83/46/33/240_F_283463385_mfnrx6RPU3BqObhVuVjYZjeZ5pegE7xq.jpg",
-    dates: "5th,6th",
-    timings: "2:00 PM - 4:00 PM",
-    accommodation: "",
-    incharge1: "Ramana",
-    incharge2: "Phani",
-    mobile1: "7672073206",
-    mobile2: "1234567890",
-    email1: "ramanakunam16@gmail.com",
-    email2: "1234567890",
-    imdbRating: 8.8,
-    userRating: 10,
-  },
-  {
-    imdbID: "tt2",
-    Title: "App development",
+    imdbID: "tt6",
+    Title: "3D-Printing &it`s types",
     Year: "1985",
     about:
-      "Product & UI/UX Design workshops focus on the principles and processes of creating user-centered digital products. Participants learn design thinking, prototyping, and user interface/user experience (UI/UX) design skills to craft effective and user-friendly solutions.",
+      "Join our 3D Printing Workshop to explore the fascinating world of additive manufacturing technologies.Learn hands-on skills in designing, slicing, and operating 3D printers to bring your ideas to life.Gain insights into the limitless possibilities of 3D printing, from prototypes to customized creations, in this immersive and practical workshop.",
     Poster:
-      "https://t4.ftcdn.net/jpg/04/04/21/61/240_F_404216128_AzxvFH2p321asyRWiGfH9G7XmqLb8zl8.jpg",
-    runtime: 116,
-    imdbRating: 8.5,
-    userRating: 9,
-    dates: "5th,6th",
-    timings: "2:00 PM - 4:00 PM",
-    accommodation: "",
-    incharge1: "Ramana",
-    incharge2: "Phani",
-    mobile1: "7672073206",
-    mobile2: "1234567890",
-    email1: "ramanakunam16@gmail.com",
-    email2: "1234567890",
+      "https://t3.ftcdn.net/jpg/03/20/63/80/240_F_320638073_wNfI2qIbu9FIi9Pk6dyHmgV7rqE4ebKQ.jpg",
   },
   {
-    imdbID: "tt3",
-    Title: "UI/UX Design",
+    imdbID: "tt6",
+    Title: "Advance Matrials(Mechanical)&it`s Applications",
+    Year: "1985",
     about:
-      "Product & UI/UX Design workshops focus on the principles and processes of creating user-centered digital products. Participants learn design thinking, prototyping, and user interface/user experience (UI/UX) design skills to craft effective and user-friendly solutions.",
-    Year: "2010",
+      "Immerse yourself in our Mechanical Advanced Materials Workshop, where cutting-edge materials and techniques are explored.Learn how to harness the latest advancements in materials science to enhance mechanical components and structures.Acquire hands-on experience, staying ahead in the field by mastering the innovative materials shaping the future of mechanical engineering.",
     Poster:
-      "https://t4.ftcdn.net/jpg/05/67/64/29/240_F_567642900_ybeyHMqPU4wAWeaxIiXEIax5qmlF1rv6.jpg",
-    runtime: 148,
-    imdbRating: 8.8,
-    userRating: 10,
+      "https://t3.ftcdn.net/jpg/07/14/32/30/240_F_714323074_3tzYTMfraqKmzykOR3zl4ECNPN8axT9B.jpg",
   },
 ];
-
+const registrationForm = "https://forms.gle/xePiRN7KhSEsiz1a9";
 // const contents = {};
 
 function App() {
@@ -138,7 +153,7 @@ function App() {
               <>
                 <HomeBackBtn />
                 <Drop />
-                <h1 className="head">Compitation</h1>
+                <h1 className="head">Competitions</h1>
                 <CompetitionList
                   onSelectedId={handleSlectedId}
                   selectedId={selectedId}
@@ -152,6 +167,7 @@ function App() {
               <>
                 <HomeBackBtn />
                 <Drop />
+                <h1 className="head">Workshops</h1>
                 <WorkShopList
                   onSelectedId={handleSlectedId}
                   selectedId={selectedId}
@@ -196,7 +212,11 @@ function Competition({ competition, onSelectedId, selectedId }) {
               <button onClick={handleClick}>Know More</button>
             </>
 
-            <button>Register</button>
+            <button>
+              <a href={registrationForm} className="links">
+                Register
+              </a>
+            </button>
           </div>
         </div>
       )}
@@ -258,7 +278,11 @@ function CompetitionDetails({ selectedId }) {
           <p>📧 {competition.email2}</p>
         </div>
         <div>
-          <button>Register</button>
+          <button>
+            <a href={registrationForm} className="links">
+              Register
+            </a>
+          </button>
         </div>
       </div>
     </>
@@ -294,7 +318,11 @@ function Workshop({ workShop, onSelectedId, selectedId }) {
               <button onClick={handleClick}>Know More</button>
             </>
 
-            <button>Register</button>
+            <button>
+              <a href={registrationForm} className="links">
+                Register
+              </a>
+            </button>
           </div>
         </div>
       )}
@@ -355,7 +383,11 @@ function WorkshopDetails({ selectedId }) {
           <p>📧 {workshop.email2}</p>
         </div>
         <div>
-          <button>Register</button>
+          <button>
+            <a href={registrationForm} className="links">
+              Register
+            </a>
+          </button>
         </div>
       </div>
     </>
