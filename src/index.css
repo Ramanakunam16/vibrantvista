@@ -97,15 +97,15 @@ body {
 .list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  width: 140vh;
+  gap: 15px;
+  min-width: 150vh;
 }
 
 h3 {
   margin-top: 20px;
 }
 .list div {
-  width: 100%;
+  width: 95%;
   height: 80%;
   /* border: 1px solid #e7e7e7; */
   background-color: #f7f7f7;
@@ -118,6 +118,7 @@ h3 {
   text-align: center;
   padding: 10px;
   cursor: pointer;
+  margin-left: 6px;
 
   /* width: 150%; */
 }
