@@ -549,7 +549,7 @@ img {
     position: relative;
     top: 200px;
     left: 60px;
-    max-width: 50%;
+    width: 70%;
     color: #e7e7e7;
   }
   .workshop button {
