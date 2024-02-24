@@ -23,7 +23,7 @@ body {
   left: 0;
   z-index: -1;
   animation: ani;
-  animation-duration: 4s;
+  animation-duration: 2s;
   background-size: cover;
   background-position: center;
 }
@@ -73,7 +73,7 @@ body {
   height: min-content;
   /* padding: 40px; */
   animation-name: ani;
-  animation-duration: 4s;
+  animation-duration: 2s;
   border: 1px solid #e7e7e7;
   background-color: #f7f7f7;
   text-decoration: none;
@@ -233,7 +233,7 @@ h3 {
   gap: 40px;
 }
 
-.buttons button span {
+.buttons span {
   font-size: 26px;
   line-height: 1;
 }
@@ -273,7 +273,7 @@ img {
   background-size: cover;
   background-attachment: fixed;
   animation: ani;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 /* .compitations {
   font-size: 30px;
@@ -500,7 +500,11 @@ img {
 
 .links {
   text-decoration: none;
-  text-decoration-color: none;
+  color: #00080d;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 900px) {
@@ -526,8 +530,8 @@ img {
   .compitations p {
     position: relative;
     top: 200px;
-    left: 80px;
-    width: 70%;
+    left: 60px;
+    width: 80%;
     color: #e7e7e7;
   }
   .compitations button {
@@ -561,6 +565,14 @@ img {
     border-radius: 40px;
     cursor: pointer;
   }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    /* bottom: 80px; */
+    right: 96px;
+    gap: 10px;
+  }
   .buttons button {
     border: none;
     cursor: pointer;
@@ -574,7 +586,7 @@ img {
 
     display: flex;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
   }
   .list {
     display: grid;
@@ -607,7 +619,11 @@ img {
     display: none;
   }
   .movieDetails p {
-    width: 120%;
+    width: 110%;
+  }
+
+  .movieDetails h1 {
+    font-size: 160%;
   }
   .about-us {
     border-radius: 50px;
@@ -624,6 +640,14 @@ img {
     margin-right: 20px;
   }
   .about-us h3 {
-    width: 120%;
+    width: 100%;
+  }
+  .menu-btn {
+    width: 30px;
+    height: 5px;
+    font-weight: 1000;
+    background-color: rgb(237, 234, 231);
+    margin: 6px 0;
+    /* padding-bottom: 5px; */
   }
 }

@@ -170,7 +170,7 @@ function App() {
             path="compitations"
             element={
               <>
-                <HomeBackBtn />
+                <CpmpetitionBackBtn />
                 <Drop />
                 <h1 className="head">Competitions</h1>
                 <CompetitionList
@@ -203,7 +203,7 @@ function App() {
 }
 
 function Competition({ competition, onSelectedId, selectedId }) {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   const navigate = useNavigate();
 
   function handleClick() {
@@ -214,16 +214,17 @@ function Competition({ competition, onSelectedId, selectedId }) {
 
   return (
     <div
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      // onMouseEnter={() => setIsHovered(true)}
+      // onMouseLeave={() => setIsHovered(false)}
+      onClick={() => setIsClicked(!isClicked)}
     >
-      {!isHovered && (
+      {!isClicked && (
         <div>
           <img src={competition.Poster} alt={`${competition.Title} poster`} />
           <h3>{competition.Title}</h3>
         </div>
       )}
-      {isHovered && (
+      {isClicked && (
         <div className="details">
           <p>{competition.about}</p>
           <div className="options">
@@ -318,8 +319,9 @@ function Workshop({ workShop, onSelectedId, selectedId }) {
 
   return (
     <div
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      // onMouseEnter={() => setIsHovered(true)}
+      // onMouseLeave={() => setIsHovered(false)}
+      onClick={() => setIsHovered(!isHovered)}
     >
       {!isHovered && (
         <div>
