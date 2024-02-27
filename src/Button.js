@@ -1,10 +1,3 @@
-export function Button({ textColor, bgColor, onClick, children }) {
-  return (
-    <button
-      style={{ backgroundColor: bgColor, color: textColor }}
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  );
+export function Button({ textColor, onClick, children }) {
+  return <button onClick={onClick}>{children}</button>;
 }
