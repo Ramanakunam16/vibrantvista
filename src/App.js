@@ -170,7 +170,7 @@ function App() {
             path="compitations"
             element={
               <>
-                <CpmpetitionBackBtn />
+                <HomeBackBtn />
                 <Drop />
                 <h1 className="head">Competitions</h1>
                 <CompetitionList
@@ -209,7 +209,7 @@ function Competition({ competition, onSelectedId, selectedId }) {
   function handleClick() {
     onSelectedId(competition.imdbID);
     // console.log(competition);
-    navigate(`/competition/${competition.imdbID}`, { state: { competition } }); // Pass competition object as state
+    navigate(`/competition/${competition.imdbID}`, { state: { competition } });
   }
 
   return (

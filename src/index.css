@@ -6,7 +6,7 @@
 }
 body {
   font-family: "Courier New", Courier, monospace;
-  background-image: url("bimg77.jpg");
+  background-image: url("gif2.gif");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -54,6 +54,7 @@ body {
   color: #f5f5f8;
 }
 .menu-btn {
+  display: block;
   width: 35px;
   height: 5px;
   font-weight: 1000;
@@ -72,8 +73,9 @@ body {
   max-width: 50%;
   height: min-content;
   /* padding: 40px; */
-  animation-name: ani;
-  animation-duration: 2s;
+  /* animation-name: ani;
+  animation-duration: 2s; */
+  animation: ani 2s ease-out;
   border: 1px solid #e7e7e7;
   background-color: #f7f7f7;
   text-decoration: none;
@@ -456,20 +458,20 @@ img {
   color: #fff;
 }
 
-.registration-form {
+/* .registration-form {
   width: 120%;
   background-color: #e7e7e7;
   padding: 40px;
   border-radius: 30px;
   /* margin-left: 30%; */
-  margin-top: 5%;
-}
-.registration-form input {
+/* margin-top: 5%; 
+}*/
+/*.registration-form input {
   width: 100%;
   padding: 10px;
   margin: 10px 10px;
-}
-.registration-form p {
+} */
+/* .registration-form p {
   margin-top: 10px;
   font-size: 18px;
 }
@@ -478,12 +480,12 @@ img {
   font-size: 22px;
 
   border-radius: 30px;
-}
-.registration-form button:hover {
+} */
+/* .registration-form button:hover {
   background-color: #00080d;
   color: white;
-}
-.registration-form pan {
+} */
+/* .registration-form pan {
   font-size: 12px;
   margin-left: 10px;
 }
@@ -496,7 +498,7 @@ img {
   background-color: #fff;
   height: 50%;
   padding: 30px;
-}
+} */
 
 .links {
   text-decoration: none;
@@ -507,7 +509,586 @@ img {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 400px) {
+  .logo h2 {
+    color: #fff;
+    font-size: 2.6em;
+    /* padding-top: 180px; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  .logopic {
+    position: absolute;
+    top: 30%;
+    right: 43%;
+    width: 20%;
+  }
+  .compitations h1 {
+    position: relative;
+    top: 160px;
+    left: 60px;
+    font-size: 200%;
+  }
+  .compitations p {
+    position: relative;
+    top: 200px;
+    left: 60px;
+    width: 80%;
+    color: #e7e7e7;
+  }
+  .compitations button {
+    position: relative;
+    top: 240px;
+    left: 70px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .workshop h1 {
+    position: relative;
+    top: 160px;
+    left: 60px;
+    font-size: 200%;
+  }
+  .workshop p {
+    position: relative;
+    top: 200px;
+    left: 60px;
+    width: 70%;
+    color: #e7e7e7;
+  }
+  .workshop button {
+    position: relative;
+    top: 240px;
+    left: 80px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    /* bottom: 80px; */
+    right: 96px;
+    gap: 10px;
+  }
+  .buttons button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 100px;
+    font-size: 34px;
+    /* font-weight: bold; */
+    position: relative;
+    margin-left: 30%;
+    /* margin-bottom: 10%; */
+
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 40vh;
+    margin-left: 15px;
+    /* margin-top: 10%; */
+  }
+  .head {
+    margin-left: 15%;
+    margin-bottom: 20%;
+    color: #fff;
+    font-size: 30px;
+  }
+  .back-btn {
+    display: none;
+  }
+  .movieDetails {
+    width: 90%;
+    height: min-content;
+    background-color: #fdfafa;
+    padding: 40px;
+    margin-left: 20px;
+
+    border-radius: 30px;
+  }
+  .movieDetails img {
+    /* z-index: 1; */
+    display: none;
+  }
+  .movieDetails p {
+    width: 110%;
+  }
+
+  .movieDetails h1 {
+    font-size: 160%;
+  }
+  .about-us {
+    border-radius: 50px;
+    border: 1px solid wheat;
+    width: 90%;
+    /* height: 50%; */
+    background-color: #f7f7f7;
+    padding: 40px;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .about-us p {
+    width: 100%;
+    margin-right: 20px;
+  }
+  .about-us h3 {
+    width: 100%;
+  }
+  .menu-btn {
+    width: 30px;
+    height: 5px;
+    font-weight: 1000;
+    background-color: rgb(237, 234, 231);
+    margin: 6px 0;
+    /* padding-bottom: 5px; */
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .logo h2 {
+    color: #fff;
+    font-size: 2.6em;
+    /* padding-top: 180px; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  .logopic {
+    position: absolute;
+    top: 30%;
+    right: 43%;
+    width: 20%;
+  }
+  .compitations h1 {
+    position: relative;
+    top: 160px;
+    left: 60px;
+    font-size: 200%;
+  }
+  .compitations p {
+    position: relative;
+    top: 200px;
+    left: 60px;
+    width: 80%;
+    color: #e7e7e7;
+  }
+  .compitations button {
+    position: relative;
+    top: 240px;
+    left: 70px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .workshop h1 {
+    position: relative;
+    top: 160px;
+    left: 60px;
+    font-size: 200%;
+  }
+  .workshop p {
+    position: relative;
+    top: 200px;
+    left: 60px;
+    width: 70%;
+    color: #e7e7e7;
+  }
+  .workshop button {
+    position: relative;
+    top: 240px;
+    left: 80px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    /* bottom: 80px; */
+    right: 96px;
+    gap: 10px;
+  }
+  .buttons button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 100px;
+    font-size: 34px;
+    /* font-weight: bold; */
+    position: relative;
+    margin-left: 30%;
+    /* margin-bottom: 10%; */
+
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 60vh;
+    margin-left: 15px;
+    /* margin-top: 10%; */
+  }
+  .head {
+    margin-left: 22%;
+    margin-bottom: 20%;
+    color: #fff;
+    font-size: 70px;
+  }
+  /* .back-btn {
+    display: none;
+  } */
+  .movieDetails {
+    width: 90%;
+    height: min-content;
+    background-color: #fdfafa;
+    padding: 40px;
+    margin-left: 5%;
+
+    border-radius: 30px;
+  }
+  .movieDetails img {
+    /* z-index: 1; */
+    display: none;
+  }
+  .movieDetails p {
+    width: 110%;
+  }
+
+  .movieDetails h1 {
+    font-size: 160%;
+  }
+  .about-us {
+    border-radius: 50px;
+    border: 1px solid wheat;
+    width: 90%;
+    /* height: 50%; */
+    background-color: #f7f7f7;
+    padding: 40px;
+    font-size: 25px;
+    margin-left: 6%;
+  }
+  .about-us p {
+    width: 100%;
+    margin-right: 20px;
+  }
+  .about-us h3 {
+    width: 100%;
+  }
+  .menu-btn {
+    width: 30px;
+    height: 5px;
+    font-weight: 1000;
+    background-color: rgb(237, 234, 231);
+    margin: 6px 0;
+    /* padding-bottom: 5px; */
+  }
+}
+
+@media only screen and (min-width: 340px) and (max-width: 980px) {
+  .logo h2 {
+    color: #fff;
+    font-size: 2.6em;
+    /* padding-top: 180px; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  .logopic {
+    position: absolute;
+    top: 30%;
+    right: 43%;
+    width: 20%;
+  }
+  .compitations h1 {
+    position: relative;
+    top: 160px;
+    left: 60px;
+    font-size: 200%;
+  }
+  .compitations p {
+    position: relative;
+    top: 200px;
+    left: 60px;
+    width: 80%;
+    color: #e7e7e7;
+  }
+  .compitations button {
+    position: relative;
+    top: 240px;
+    left: 70px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .workshop h1 {
+    position: relative;
+    top: 160px;
+    left: 60px;
+    font-size: 200%;
+  }
+  .workshop p {
+    position: relative;
+    top: 200px;
+    left: 60px;
+    width: 70%;
+    color: #e7e7e7;
+  }
+  .workshop button {
+    position: relative;
+    top: 240px;
+    left: 80px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    /* bottom: 80px; */
+    right: 96px;
+    gap: 10px;
+  }
+  .buttons button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 100px;
+    font-size: 34px;
+    /* font-weight: bold; */
+    position: relative;
+    margin-left: 30%;
+    /* margin-bottom: 10%; */
+
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 40vh;
+    margin-left: 15px;
+    /* margin-top: 10%; */
+  }
+  .head {
+    margin-left: 15%;
+    margin-bottom: 20%;
+    color: #fff;
+    font-size: 30px;
+  }
+  .back-btn {
+    display: none;
+  }
+  .movieDetails {
+    width: 90%;
+    height: min-content;
+    background-color: #fdfafa;
+    padding: 40px;
+    margin-left: 20px;
+
+    border-radius: 30px;
+  }
+  .movieDetails img {
+    /* z-index: 1; */
+    display: none;
+  }
+  .movieDetails p {
+    width: 110%;
+  }
+
+  .movieDetails h1 {
+    font-size: 160%;
+  }
+  .about-us {
+    border-radius: 50px;
+    border: 1px solid wheat;
+    width: 90%;
+    /* height: 50%; */
+    background-color: #f7f7f7;
+    padding: 40px;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .about-us p {
+    width: 100%;
+    margin-right: 20px;
+  }
+  .about-us h3 {
+    width: 100%;
+  }
+  .menu-btn {
+    width: 30px;
+    height: 5px;
+    font-weight: 1000;
+    background-color: rgb(237, 234, 231);
+    margin: 6px 0;
+    /* padding-bottom: 5px; */
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1024px) {
+  .logo h2 {
+    color: #fff;
+    font-size: 2.6em;
+    /* padding-top: 180px; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  .logopic {
+    position: absolute;
+    top: 30%;
+    right: 43%;
+    width: 20%;
+  }
+  .compitations h1 {
+    position: relative;
+    top: 160px;
+    left: 60px;
+    font-size: 200%;
+  }
+  .compitations p {
+    position: relative;
+    top: 200px;
+    left: 60px;
+    width: 80%;
+    color: #e7e7e7;
+  }
+  .compitations button {
+    position: relative;
+    top: 240px;
+    left: 70px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .workshop h1 {
+    position: relative;
+    top: 160px;
+    left: 60px;
+    font-size: 200%;
+  }
+  .workshop p {
+    position: relative;
+    top: 200px;
+    left: 60px;
+    width: 70%;
+    color: #e7e7e7;
+  }
+  .workshop button {
+    position: relative;
+    top: 240px;
+    left: 80px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    /* bottom: 80px; */
+    right: 96px;
+    gap: 10px;
+  }
+  .buttons button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 100px;
+    font-size: 34px;
+    /* font-weight: bold; */
+    position: relative;
+    margin-left: 30%;
+    /* margin-bottom: 10%; */
+
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 40vh;
+    margin-left: 15px;
+    /* margin-top: 10%; */
+  }
+  .head {
+    margin-left: 5%;
+    margin-bottom: 20%;
+    color: #fff;
+    font-size: 60px;
+  }
+  .back-btn {
+    display: none;
+  }
+  .movieDetails {
+    width: 90%;
+    height: min-content;
+    background-color: #fdfafa;
+    padding: 40px;
+    margin-left: 20px;
+
+    border-radius: 30px;
+  }
+  .movieDetails img {
+    /* z-index: 1; */
+    display: none;
+  }
+  .movieDetails p {
+    width: 110%;
+  }
+
+  .movieDetails h1 {
+    font-size: 160%;
+  }
+  .about-us {
+    border-radius: 50px;
+    border: 1px solid wheat;
+    width: 90%;
+    /* height: 50%; */
+    background-color: #f7f7f7;
+    padding: 40px;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .about-us p {
+    width: 100%;
+    margin-right: 20px;
+  }
+  .about-us h3 {
+    width: 100%;
+  }
+  .menu-btn {
+    width: 30px;
+    height: 5px;
+    font-weight: 1000;
+    background-color: rgb(237, 234, 231);
+    margin: 6px 0;
+    /* padding-bottom: 5px; */
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
   .logo h2 {
     color: #fff;
     font-size: 2.6em;
