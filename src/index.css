@@ -6,7 +6,7 @@
 }
 body {
   font-family: "Courier New", Courier, monospace;
-  background-image: url("gif2.gif");
+  background-image: url("bimg45.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -463,6 +463,32 @@ h3 {
     right: 43%;
     width: 20%;
   }
+  .buttons {
+    width: 10%;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+  .buttons button {
+    border-radius: 48%;
+    padding: 8%;
+    cursor: pointer;
+  }
+  .buttons button:hover {
+    background-color: #c3c2c2;
+  }
+
+  .arrow {
+    width: 60%;
+  }
+
+  .rigth-arrow {
+    transform: rotate(180deg);
+  }
   .compitations h1 {
     position: relative;
     top: 160px;
@@ -585,6 +611,32 @@ h3 {
     right: 43%;
     width: 20%;
   }
+  .buttons {
+    width: 10%;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+  .buttons button {
+    border-radius: 48%;
+    padding: 8%;
+    cursor: pointer;
+  }
+  .buttons button:hover {
+    background-color: #c3c2c2;
+  }
+
+  .arrow {
+    width: 60%;
+  }
+
+  .rigth-arrow {
+    transform: rotate(180deg);
+  }
   .compitations h1 {
     position: relative;
     top: 160px;
@@ -706,6 +758,32 @@ h3 {
     top: 30%;
     right: 43%;
     width: 20%;
+  }
+  .buttons {
+    width: 10%;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+  .buttons button {
+    border-radius: 48%;
+    padding: 8%;
+    cursor: pointer;
+  }
+  .buttons button:hover {
+    background-color: #c3c2c2;
+  }
+
+  .arrow {
+    width: 160%;
+  }
+
+  .rigth-arrow {
+    transform: rotate(180deg);
   }
   .compitations h1 {
     position: relative;
